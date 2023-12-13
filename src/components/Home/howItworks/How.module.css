@@ -1,0 +1,27 @@
+.howitWorks{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color :#CBE1FF  ;
+}
+
+
+.card{
+    width: 20rem;
+    height : max-content ;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.h1{
+    font-size: 3.5rem;
+}
+
+.card:hover{
+    scale: 1.05;
+}
+
+@media screen and (width < 600px){
+    .card {
+        width : 90%;
+    }
+}

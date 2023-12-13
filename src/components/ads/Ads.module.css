@@ -1,0 +1,12 @@
+.card {
+    width:  60%;
+    padding: 1.5rem ;
+    background-color : #99DBF5;
+}
+
+@media  screen and (width < 800px ) {
+    .card {
+        width: 95%;
+    }
+    
+}

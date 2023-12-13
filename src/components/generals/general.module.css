@@ -1,0 +1,60 @@
+.mainNav{
+    background-color : #CBE1FF ;
+    padding: 2rem;
+
+
+}
+
+
+.mainNav a{
+    text-decoration: none;
+    color : black;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: max-content ;
+   padding: 2rem;
+
+    background-image: url("../../images/footer-bg.jpg");
+   
+    display: flex;
+    justify-content : center;
+    gap: 10vw;
+    flex-wrap: wrap;
+}
+
+.item , .item1{
+    width: 25%;
+    display: flex;
+    gap: 10vw;
+}
+.item1 input {
+    width: 80%;
+    height: 2.5rem;
+}
+
+.contentColor {
+    color : #8E9AB6 ;
+}
+
+
+@media screen and (width < 1000px){
+    .item{
+        width: 30%;
+    }
+
+    .item1{
+        width: 60%;
+    }
+}
+@media screen and (width < 600px){
+    .item , .item1{
+        width : 90%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
