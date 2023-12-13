@@ -8,7 +8,7 @@ const MainNav = () => {
                <Navbar collapseOnSelect expand="lg" className={classes.mainNav}>
                     <Container>
                          <Navbar.Brand className="ms-5 fs-1 fw-bold">
-                              <span className=" text-primary">Vip</span>Links
+                              <span className=" text-primary">S</span>Links
                          </Navbar.Brand>
                          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                          <Navbar.Collapse

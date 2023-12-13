@@ -84,15 +84,13 @@ export const increaseSites = () => {
      };
 };
 
-export const increaseCountForLinkId = (linkId , count) => {
+export const increaseCountForLinkId = (linkId, count) => {
      return async (dispatch) => {
-         
           update(ref(db, "/links/" + linkId), {
                count: ++count,
           });
      };
 };
-
 
 // const initalCallStat = () => {
 //      set(ref(db , "/stat") , initialState.stat)
