@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { get, onValue, ref, set, update } from "firebase/database";
+import { onValue, ref, update } from "firebase/database";
 import { db } from "../firebase";
 import { addLinkActions } from "./addlink";
 
@@ -48,9 +48,9 @@ const userSlice = createSlice({
                };
           },
 
-          resetUserState (state,action){
-               return initialState
-          }
+          resetUserState(state, action) {
+               return initialState;
+          },
      },
 });
 
@@ -63,7 +63,7 @@ export const gettingdatafromfirebase = (array) => {
           console.log("getLInkIdsData");
           let totalCount = 0;
           let totalDollar = 0;
-          let sentArray = [ ];
+          let sentArray = [];
           let length = array.length;
 
           for (let i = 0; i < length; i++) {
@@ -159,34 +159,30 @@ async function getUserData(userId) {
 // ui  :  , linkId : ""
 export const deleteUserLink = (obj) => {
      return async (dispatch) => {
-          const userId = obj.userId ;
-          const linkId = obj.linkId ;
-          let array = [] ; 
-          const data = await getUserData(userId)
-          console.log(data)
-          for (let i = 0; i< data.length ; i++){
-               if (data[i].linkId === linkId ){
-
-               }
-               else {
-                    array.push(data[i])
+          const userId = obj.userId;
+          const linkId = obj.linkId;
+          let array = [];
+          const data = await getUserData(userId);
+          console.log(data);
+          for (let i = 0; i < data.length; i++) {
+               if (data[i].linkId === linkId) {
+               } else {
+                    array.push(data[i]);
                }
           }
-          console.log(array)
-          update(ref(db,"/users/"+userId ) , {
-               linksArray : array
-          })
-
+          console.log(array);
+          update(ref(db, "/users/" + userId), {
+               linksArray: array,
+          });
      };
 };
 
 async function getLinkArray(userId) {
      await new Promise((resolve) => {
           onValue(ref(db, "/users/" + userId), (snapshot) => {
-               const data = snapshot.val()
-     
-               resolve(data.linksArray)
+               const data = snapshot.val();
 
+               resolve(data.linksArray);
           });
      });
 }

@@ -8,11 +8,7 @@ import {
 } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { onValue, ref, set } from "firebase/database";
-import {
-     getLinkIdsData,
-     gettingdatafromfirebase,
-     userSliceActions,
-} from "./User";
+import { gettingdatafromfirebase, userSliceActions } from "./User";
 import { increaseRegisterUsers } from "./ui";
 
 const initialState = {
@@ -181,18 +177,16 @@ export const authChange = (navigate) => {
      };
 };
 
-
-
-export const resetPassword = async() => {
-     console.log("clsadfsdafsdfasfsdafasf")
+export const resetPassword = async () => {
+     console.log("clsadfsdafsdfasfsdafasf");
      sendPasswordResetEmail(auth, "summatroll@gmail.com")
-     .then(() => {
-       // Password reset email sent!
-       // ..
-     })
-     .catch((error) => {
-       const errorCode = error.code;
-       const errorMessage = error.message;
-       // ..
-     }); 
-}
+          .then(() => {
+               // Password reset email sent!
+               // ..
+          })
+          .catch((error) => {
+               const errorCode = error.code;
+               const errorMessage = error.message;
+               // ..
+          });
+};

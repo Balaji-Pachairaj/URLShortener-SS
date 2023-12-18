@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 // import Member from "./pages/Member";
 // import ForgetPassword from "./pages/ForgetPassword";
 import { lazy, Suspense } from "react";
+import DirectRedirectLink from "./pages/DirectRedirectLink";
 
 //router Section
 
@@ -70,7 +71,7 @@ const router = createBrowserRouter([
           path: "/l/:linkId",
           element: (
                <Suspense fallback={<p className=" text-center">loading...</p>}>
-                    <Link />
+                    <DirectRedirectLink />
                </Suspense>
           ),
      },
