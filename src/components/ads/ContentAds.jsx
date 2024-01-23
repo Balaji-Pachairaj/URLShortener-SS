@@ -19,7 +19,7 @@ const ContentAds = () => {
                     style={{ backgroundColor: "#99DBF5" }}
                >
                     <Card.Title className=" text-center fw-bolder">
-                         VIP LINKs
+                         S LINKs
                     </Card.Title>
                     <hr className="m-0 mt-3 mb-3" />
                     <Card.Text className="text-center">

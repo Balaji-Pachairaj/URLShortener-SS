@@ -11,19 +11,19 @@ const Questions = () => {
                     <div className={classes.item}>
                          <Accordion className={classes.accor} defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>What is VIP Link?</Accordion.Header>
+                                <Accordion.Header>What is S Link?</Accordion.Header>
                                 <Accordion.Body>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your earning efforts.by sharing the links you can earn money.</Accordion.Body>
                            </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>Benefits of VIP Links</Accordion.Header>
+                                <Accordion.Header>Benefits of S Links</Accordion.Header>
                                 <Accordion.Body>A short URL is also easier to incorporate into your collateral – whether you’re looking to engage with your users. its easy to earn with us.</Accordion.Body>
                            </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>Features of VIP Link URL Shortner</Accordion.Header>
+                                <Accordion.Header>Features of S Link URL Shortner</Accordion.Header>
                                 <Accordion.Body>High CPM,Low Minimum Payout,You are required to earn only $5 minimum threshold before you will be paid. We can pay all users via their prefered payment method.</Accordion.Body>
                            </Accordion.Item>
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header>Why Choose VIP Link</Accordion.Header>
+                                <Accordion.Header>Why Choose S Link</Accordion.Header>
                                 <Accordion.Body>Whether you’re sharing one link or millions, our platform was built to help you make every point of connection between your content and your audience ignite action. That’s why the most recognized brands in the world love our platform.</Accordion.Body>
                            </Accordion.Item>
                          </Accordion>

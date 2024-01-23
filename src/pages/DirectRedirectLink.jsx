@@ -38,14 +38,15 @@ const getLinkId = async (linkId) => {
 export const shorthenLinkThunk = (linkId, navigate) => {
      return async (dispatch) => {
           dispatch(increaseTotalClick());
-         // console.log("Total Click updated");
+          // console.log("Total Click updated");
 
           let data = await getLinkId(linkId);
 
-         // console.log(data);
+          console.log(data);
 
           if (!data) {
-               navigate("/");
+               window.location.replace("/");
+               return;
           }
 
           dispatch(increaseCountForLinkId(linkId, data.count));

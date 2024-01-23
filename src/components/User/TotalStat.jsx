@@ -18,13 +18,13 @@ const TotalStat = () => {
                 <FontAwesomeIcon icon={faEye} />
             </div>
         </Card>
-        <Card  className={classes.item}>
+        {/* <Card  className={classes.item}>
             <Card.Title>Earning</Card.Title>
             <div className={classes.number}>
                 <h1>{user.totalDollars}</h1>
                 <FontAwesomeIcon icon={faDollar} />
             </div>
-        </Card>
+        </Card> */}
       
     </div>
   )

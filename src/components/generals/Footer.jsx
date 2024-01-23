@@ -13,9 +13,9 @@ const Footer = () => {
           <div className={classes.footer}>
                <div className={classes.item}>
                     <div>
-                         <h3 className=" text-light">Vip links </h3>
+                         <h3 className=" text-light">S links </h3>
                          <p className={classes.contentColor}>
-                              VIP Link is a completely free tool where you can
+                              S Link is a completely free tool where you can
                               create short links, which apart from being free,
                               you get paid! So, now you can make money from
                               home, when managing and protecting your links.

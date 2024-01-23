@@ -35,7 +35,7 @@ const TopContainer = () => {
                          </div>
                     </div>
                     <hr className="m-0 mt-2 ms-3 me-3 text-dark" />
-                    <div className=" fs-1 fw-medium text-center mt-4 text-light ms-3 me-3">Create short and branded links with VIP Links</div>
+                    <div className=" fs-1 fw-medium text-center mt-4 text-light ms-3 me-3">Create short and branded links with S Links</div>
                     
                     <div className="text-center mt-4">
                         <button className="fw-semibold btn btn-outline-dark" onClick={createModalHandler} > 

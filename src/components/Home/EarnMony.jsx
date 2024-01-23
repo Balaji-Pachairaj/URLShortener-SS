@@ -18,7 +18,7 @@ const EarnMony = () => {
                          />
                          <p>Providing Best Services</p>
                          <h1 className="fw-bolder mb-5">
-                              Earn Money with VIP Links{" "}
+                              Earn Money with S Links{" "}
                          </h1>
                          <h5 className="mb-5">
                               Turning your traffic into profits
